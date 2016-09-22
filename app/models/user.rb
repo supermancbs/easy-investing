@@ -3,7 +3,6 @@ class User < ApplicationRecord
   has_many :funds, through: :account
   validates :email, uniqueness: true
   validates :first_name, :last_name, :password, :email, :address, presence: true
-
   has_secure_password
 
   def name
