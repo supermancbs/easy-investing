@@ -1,0 +1,2 @@
+class AccountFund < ApplicationRecord
+end
