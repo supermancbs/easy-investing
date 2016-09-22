@@ -1,14 +1,23 @@
 <h2>Create New User</h2><br/>
 <%=form_for @user do |f|%>
+
   <%=label_tag "First Name:"%>
   <%=f.text_field :first_name%><br/><br/>
+
   <%=label_tag "Last Name:"%>
   <%=f.text_field :last_name%><br/><br/>
+
   <%=label_tag "Address:"%>
   <%=f.text_field :address%><br/><br/>
+
   <%=label_tag "Email:"%>
   <%=f.text_field :email%><br/><br/>
+
   <%=label_tag "Password:"%>
-  <%=password_field_tag(:password)%><br/><br/>
+  <%=f.password_field(:password)%><br/><br/>
+
+  <%=label_tag "Password Confirmation:"%>
+  <%=f.password_field(:password_confirmation)%><br/><br/>
+
   <%=f.submit%>
 <%end%>
