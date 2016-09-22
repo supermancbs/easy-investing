@@ -6,10 +6,15 @@ class UsersController < ApplicationController
 
   def create
     if @user = User.create(private_params_create_user)
-      redirect_to new_account_path(:user_id => params[:user_id])
+      session[:user_id] = @user.id
+      redirect_to new_account_path
     else
       render 'new'
     end
+  end
+
+  def show
+    byebug
   end
 
   private
