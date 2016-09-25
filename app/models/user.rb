@@ -13,5 +13,9 @@ class User < ApplicationRecord
     self.account.account_funds
   end
 
+  def available_funds
+    self.investments.map(&:account_id)
+  end
+
 
 end

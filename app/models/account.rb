@@ -10,5 +10,6 @@ class Account < ApplicationRecord
   def increase_balance(amount)
     self.balace+=amount
   end
-  
+
+
 end

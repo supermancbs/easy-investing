@@ -1,7 +1,12 @@
 class FundsController < ApplicationController
 before_filter :authorize
+
+  def index
+
+  end
+  
   def new
-    byebug
+
   end
 
   def create
