@@ -9,4 +9,9 @@ class User < ApplicationRecord
     "#{self.first_name} #{self.last_name}"
   end
 
+  def investments
+    self.account.account_funds
+  end
+
+
 end

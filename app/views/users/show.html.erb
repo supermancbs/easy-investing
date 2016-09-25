@@ -1,4 +1,10 @@
-<%=@user.name%>
+
 <br/><br/>
-Balance:
-<%=@user.account.balance%>
+Cash Balance: <%=@user.account.balance%>
+
+<div>
+  Select a new Fund:
+  <%=render "funds/index"%>
+</div>
+
+<div>Current Funds:</div>
