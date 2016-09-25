@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   resources :funds
   resources :accounts
   resources :users
+  resources :account_funds
   get '/login' => 'sessions#new'
   post '/login' => 'sessions#create'
   get '/logout' => 'sessions#destroy'
