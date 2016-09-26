@@ -1,1 +1,10 @@
-TESS
+<h2>Create Put Money Into a Fund</h2><br/>
+<%=form_for @account_fund do |f|%>
+
+  <%=label_tag "Amount:"%>
+  <%=f.text_field :amount%><br/><br/>
+
+  <%= f.collection_select :id, @funds ,:id,:name, include_blank: true %>
+
+  <%=f.submit%>
+<%end%>

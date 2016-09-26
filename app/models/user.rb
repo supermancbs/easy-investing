@@ -13,8 +13,8 @@ class User < ApplicationRecord
     self.account.account_funds
   end
 
-  def available_funds
-    self.investments.map(&:account_id)
+  def fund_ids
+    self.investments.map(&:fund_id)
   end
 
 
