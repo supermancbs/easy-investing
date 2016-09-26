@@ -4,7 +4,7 @@ Cash Balance: <%=@user.account.balance%>
 
 <div>
   Select a new Fund:
-  <%=render "funds/index"%>
+  <%= link_to 'Create Fund', new_account_fund_path %>
 </div>
 
 <div>Current Funds:</div>
